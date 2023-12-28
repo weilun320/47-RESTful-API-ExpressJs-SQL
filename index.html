@@ -11,14 +11,20 @@
   <h1>Welcome to the API!</h1>
   <h2>How to use this API:</h2>
   <ul>
+    <li><strong>GET /posts :</strong> Get all posts. Retrieve all posts.</li>
     <li><strong>GET /posts/:id :</strong> Get a post by ID. Replace ":id" with the ID of the post you want to retrieve.
     </li>
+    <li><strong>GET /posts/author/:authorName :</strong> Get all posts by author. Replace ":authorName" with the author
+      of the posts you want to retrieve.</li>
+    <li><strong>GET /posts/dates/:startDate/:endDate :</strong> Get all posts in a certain date range. Replace
+      ":startDate" with the starting date and ":endDate" with the ending date of the posts you want to retrieve.</li>
     <li><strong>POST /posts :</strong> Create a new post. The body should be a JSON object with "title", "content", and
       "author" keys.</li>
     <li><strong>PUT /posts/:id :</strong> Update an existing post. Replace ":id" with the ID of the post you want to
       update. The body should be a JSON object with "title", "content", and "author" keys you want to update.</li>
     <li><strong>DELETE /posts/:id :</strong> Delete a post. Replace ":id" with the ID of the post you want to delete.
-    </li>
+    <li><strong>DELETE /posts/author/:authorName :</strong> Delete all posts by author. Replace ":authorName" with the
+      author of the posts you want to delete.</li>
   </ul>
 </body>
 
