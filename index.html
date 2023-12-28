@@ -17,7 +17,8 @@
     <li><strong>GET /posts/author/:authorName :</strong> Get all posts by author. Replace ":authorName" with the author
       of the posts you want to retrieve.</li>
     <li><strong>GET /posts/dates/:startDate/:endDate :</strong> Get all posts in a certain date range. Replace
-      ":startDate" with the starting date and ":endDate" with the ending date of the posts you want to retrieve.</li>
+      ":startDate" with the starting date and ":endDate" with the ending date of the posts you want to retrieve. Date
+      format should be "yyyy-mm-dd" e.g. "2023-12-28"</li>
     <li><strong>POST /posts :</strong> Create a new post. The body should be a JSON object with "title", "content", and
       "author" keys.</li>
     <li><strong>PUT /posts/:id :</strong> Update an existing post. Replace ":id" with the ID of the post you want to
